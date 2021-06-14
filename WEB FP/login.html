@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="./logo.png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js"></script>    
+</head>
+<body>
+    <!--        Nav bar       -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Horizon</label>
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Books.html">Books</a></li>
+            <li><a href="./Publish.html">Publish</a></li>
+            <li><a href="./Membership.html">Membership</a></li>
+            <li><a href="./login.html" class="active">Login</a></li>
+        </ul>       
+    </nav>
+    <!-------------------------->
+
+    <!--     Hero section     -->
+    <section class="hero5">
+        <div class="hero5-container">
+            <div class="overlay5"><img src="./hero5.jpg" class="hero5-img"></div>
+            <div class="hero5-text"><h1>Welcome back!</h1></div>
+        </div>
+    </section>
+    <!--------------------------->
+<div class="form2-div">
+    <form action="post" target="_blank" autocomplete="off" class="form2">
+        <fieldset>
+            <legend>Sign in</legend>
+            <label for="name">User Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your user name" required>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <input type="submit" value="Sign in" class="btn4">
+        </fieldset>
+    </form>
+
+    <form action="post" target="_blank" autocomplete="off" class="form3">
+        <fieldset>
+            <legend>Sign up</legend>
+            <label for="name">User Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your user name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            <label for="pass2">Password:</label>
+            <input type="password" name="pass2" id="pass2" placeholder="Choose a password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <label for="age">Age:</label>
+            <span id="age-value">18</span>
+            <input type="range" id="age" min="18" max="120" value="18" onchange="myFunction()" required>
+            <div class="gender">
+            <label for="male" class="glabel">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female" class="glabel">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <input type="submit" value="Create Account" class="btn5">
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <!--     Footer section    -->
+
+    <footer class="footer">
+        <p>©Copyrights Horizon library</p>
+        <a href="#" class="footer-btn">Contact</a>
+    </footer>
+    <!--------------------------->
+</body>
+</html>
